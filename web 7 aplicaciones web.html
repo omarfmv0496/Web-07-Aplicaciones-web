@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mi portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap icons CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"
+    />
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <script>
+      console.log("Test");
+      let d = new Date();
+      console.log(`Se inicio el proceso a las ${d.getHours()} h.`);
+
+    </script>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-sm bg-success" data-bs-theme="light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img id="logo"
+            class="logo"
+            src="./assets/img/logo.png"
+            alt="Joystick"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="https://www.linkedin.com/in/juan-pablo-figueroa-moran-810830239/"
+                target="_blank"
+                >Linkedin</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Proyectos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./assets/dtn.html">Dime tu nombre</a></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#">Calculadora</a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item disabled" href="#"
+                    >Otros</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Acerca de -->
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col">
+          <h1>Omar Fernando Michaca Vera </h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h3>Desarrollador Full-Stack Java</h3>
+        </div>
+        <div class="col-12 col-md-6"><h3>Músico y Gamer</h3></div>
+      </div>
+    </div>
+    <!-- Carrosel -->
+    <div class="container my-4 text-center">
+      <div class="row justify-content-center">
+        <!-- Carrosel -->
+        <div class="col-9 mb-2">
+          <div
+            id="carouselExample"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+                <img
+                  src="https://www.djviguerias.com/wp-content/uploads/2018/11/dark-1850120_1920.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Fotografía de un setup de DJ"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="https://assets2.razerzone.com/images/pnx.assets/54fa42c1c4be224e7499abf6b1071d99/razer-wolverine-v2-chroma_additional.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Joystick marca razer"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="https://pandorafms.com/blog/wp-content/uploads/2020/07/que-es-un-desarrollador-featured.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Personaje con cabeza de computadora"
+                />
+              </div>
+              <div class="carousel-item" data-bs-interval="3000">
+                <img
+                  src="https://s1.eestatic.com/2022/01/27/omicrono/software/645696122_221432786_1024x576.jpg"
+                  class="d-block w-100 rounded"
+                  alt="Logo de spotify"
+                />
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <!-- descripción carrosel -->
+        <div class="col-12 col-lg-3">
+          <!-- Descripción -->
+          <div class="row">
+            <div class="col">
+              <p>
+                Mi formacion profesional es Químico Farmacobiología, pero descubrí en la TI una verdadera pasión, implementando las experiencias adquiridas en la 
+                ciencia, comunicacón asertiva, ventas y la industria farmacéutica.
+              </p>
+            </div>
+          </div>
+          <!-- Botón linkedin -->
+          <div class="row">
+            <div class="col">
+              <a
+                href="https://www.linkedin.com/in/juan-pablo-figueroa-moran-810830239/"
+                target="_blank"
+              >
+                <button type="button" class="btn btn-dark">
+                  <i class="bi bi-linkedin"></i> Contáctame
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Acceso a DOM -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-5 text-center">
+          <p id="name"> Mi nombre</p>
+          <!-- <p onclick="changeColorToRed()">Cambia el color a rojo</p> -->
+        </div>
+      </div>
+      <!-- Botones cambia el color -->
+      <div class="row">
+        <div class="col">
+          <button onclick="changeColorToGreen()" type="button" class="btn btn-success">Verde</button>
+          <button onclick="changeColorToBlack()" type="button" class="btn btn-dark">Negro</button>
+          <button onclick="changeColorToWhite()" type="button" class="btn btn-light">blanco</button>
+        </div>
+        <div class="col">
+
+        </div>
+        <div class="col">
+
+        </div>
+      </div>
+    </div>
+    
+    <!-- Ondas SVG -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00cba9" fill-opacity="1" d="M0,192L7.5,213.3C15,235,30,277,45,250.7C60,224,75,128,90,101.3C105,75,120,117,135,128C150,139,165,117,180,106.7C195,96,210,96,225,80C240,64,255,32,270,69.3C285,107,300,213,315,224C330,235,345,149,360,138.7C375,128,390,192,405,181.3C420,171,435,85,450,48C465,11,480,21,495,42.7C510,64,525,96,540,144C555,192,570,256,585,277.3C600,299,615,277,630,256C645,235,660,213,675,208C690,203,705,213,720,213.3C735,213,750,203,765,208C780,213,795,235,810,234.7C825,235,840,213,855,192C870,171,885,149,900,154.7C915,160,930,192,945,181.3C960,171,975,117,990,85.3C1005,53,1020,43,1035,37.3C1050,32,1065,32,1080,26.7C1095,21,1110,11,1125,10.7C1140,11,1155,21,1170,21.3C1185,21,1200,11,1215,10.7C1230,11,1245,21,1260,58.7C1275,96,1290,160,1305,176C1320,192,1335,160,1350,160C1365,160,1380,192,1395,176C1410,160,1425,96,1433,64L1440,32L1440,320L1432.5,320C1425,320,1410,320,1395,320C1380,320,1365,320,1350,320C1335,320,1320,320,1305,320C1290,320,1275,320,1260,320C1245,320,1230,320,1215,320C1200,320,1185,320,1170,320C1155,320,1140,320,1125,320C1110,320,1095,320,1080,320C1065,320,1050,320,1035,320C1020,320,1005,320,990,320C975,320,960,320,945,320C930,320,915,320,900,320C885,320,870,320,855,320C840,320,825,320,810,320C795,320,780,320,765,320C750,320,735,320,720,320C705,320,690,320,675,320C660,320,645,320,630,320C615,320,600,320,585,320C570,320,555,320,540,320C525,320,510,320,495,320C480,320,465,320,450,320C435,320,420,320,405,320C390,320,375,320,360,320C345,320,330,320,315,320C300,320,285,320,270,320C255,320,240,320,225,320C210,320,195,320,180,320C165,320,150,320,135,320C120,320,105,320,90,320C75,320,60,320,45,320C30,320,15,320,8,320L0,320Z"></path></svg><!-- Script Bootstrap -->
+    
+    <!-- SCRIPT DE BOOTSTRAP -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script cambia el nombre -->
+    <script>
+      const refName = document.getElementById("name");
+      console.log(refName);      
+      refName.innerHTML = "<strong>Juan Pablo Figueroa Moran</strong> ";
+    </script>
+    <!-- Script externo -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
